@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fantastic Radial Menu</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="css/fantastic_radial_menu.css" />
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js?ver=4.0'></script>
+		<script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js?ver=1.0'></script>
+		<script src="src/fantastic_radial_menu.js"></script>
+		<script>
+			$(document).ready(function(){
+				if($.isTouchable()){
+					$('body').addClass('touchable');
+				} else {
+					$('body').addClass('not-touchable');
+				}
+				$('.fm').fantasticRadialMenu({
+					hyp:85,						// length in pixels of the hypotenuse (or how distant the sub-menu items should be)
+					span:150,					// span in degrees on the menu items to go across
+					angStart:165,				// at what angle in degrees is the starting element?
+					direction:'clockwise',		// what direction should we render the following element?
+					firingEvent:'click'			// event that will fire the menu transition (click, hover)
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="fmw">
+		</div>
+		<div class="fm bottom text-center">
+			<h2><span class="glyphicon glyphicon-align-justify"></span> <span class="sr-only">Menu</span></h2>
+			<ul class="media-list margin-vertical-half">
+				<li><a href="#">Item 0</a></li>
+				<li><a href="#">Item 1</a></li>
+				<li><a href="#">Item 2</a></li>
+				<li><a href="#">Item 3</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

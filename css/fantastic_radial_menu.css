@@ -1,0 +1,103 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css");
+@import url(http://fonts.googleapis.com/css?family=Sanchez);
+html,body{
+	height:100%;
+	width:100%;
+	font-family: 'Sanchez', serif;
+	font-size:16px;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family:'Sanchez',serif;
+	font-variant:small-caps;
+	color:#fff;
+}
+a, .not-touchable a:hover, a:active, a:focus{
+	outline: 0;
+}
+.not-touchable a:hover{text-decoration:none;}
+/* FANTASTIC RADIAL MENU CLASSES */
+.fm {
+    bottom: 0;
+    height: 90px;
+    left: 0;
+    position: fixed;
+    width: 50%;
+	z-index: 6;
+	transition:all 600ms ease;
+}
+.fm h2 {
+    background-color: #428BCA;
+    border: 1px solid;
+    border-radius: 35px;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 70px;
+    margin: 0;
+    padding-top: 18px;
+    position: absolute;
+    right: -35px;
+    top: 0;
+    width: 70px;
+    z-index: 4000;
+	font-size: 28px;
+	
+	transition:all 150ms ease;
+}
+.not-touchable .fm h2:hover{
+	background-color:#57A0DB
+}
+.fm h2.off {
+	background-color: #428BCA
+}
+.fm ul {
+    display: block;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: -30px;
+    top: 5px;
+    width: 60px;
+    z-index: 2000;
+}
+.fm ul li{
+    background-color: #428bca;
+    border: 1px solid #428bca;
+    border-radius: 35px;
+    box-shadow: 0 0 3px #58add6;
+    display: block;
+    height: 60px;
+    position: absolute;
+    width: 60px;
+    box-shadow: 0 0 3px #58add6;
+	z-index:3000;
+}
+.fm ul li.off{
+	top:0px !important;
+	left:0px !important;
+}
+.fm a {
+    border-radius: 29px;
+    display: block;
+    height: 58px;
+    padding-top: 18px;
+	background-color:rgba(255,255,255,0.75);
+	transition:all 150ms ease;
+}
+.fm .current-menu-item a{
+	background-color:rgba(255,255,255,0.9);
+}
+.not-touchable .fm a:hover {
+	background-color:rgba(255,255,255,1);
+}
+.fmw {
+    background-color: #165c96;
+    border-top: 1px solid #fff;
+    bottom: 0;
+    height: 54px;
+    position: fixed;
+	z-index:2;
+    width: 100%;
+}
+/* END OF FANTASTIC RADIAL MENU CLASSES */
